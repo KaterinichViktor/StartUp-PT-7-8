@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+
+    <!-- Normalizer first -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <header>
+        <h1 class="main-title">Розумний додаток для управління особистим бюджетом</h1>
+    </header>
+    <main>
+        <section class="info-slides">
+            <div class="text-example">
+                <h2 class="section-title">Ідея</h2>
+                <p>Наш стартап пропонує створення інноваційного розумного додатку для управління особистим бюджетом, який допоможе користувачам легко та ефективно контролювати свої фінанси, планувати витрати та заощадження, а також досягати своїх фінансових цілей. <br>Додаток поєднує зручність, автоматизацію та штучний інтелект для забезпечення максимального комфорту та користі для кожного користувача.</p>
+            </div>
+            <div class="image-example-box"> 
+                <img class="image-example" src="./images/idea.png" alt="1">
+            </div>
+        </section>
+        <section class="info-slides">
+            <div class="image-example-box-2">
+                <img class="image-example" src="./images/problem.png" alt="2">
+            </div>
+            <div class="text-example-2">
+                <h2 class="section-title">Проблема</h2>
+                <p>Багато людей стикаються з труднощами у веденні особистого бюджету, що може призвести до фінансового стресу та нестабільності. Основні проблеми включають:
+                    <br>
+                    <br><span class="text-points">- Відсутність ясності щодо того, куди йдуть гроші.</span>
+                    <br><span class="text-points">- Неможливість ефективно планувати витрати та заощадження.</span>
+                    <br><span class="text-points">- Недостатність знань про фінансове планування та управління грошима.</span>
+                    <br><span class="text-points">- Складність у відстеженні витрат та доходів вручну.</span>
+                </p>
+            </div>
+        </section>
+        <section class="info-slides">
+            <div class="text-example">
+                <h2 class="section-title">Рішення</h2>
+                <p>
+                    <span class="text-points">Автоматичне відстеження витрат:</span><br>Синхронізація з банківськими рахунками користувача, автоматична класифікація витрат та доходів.
+                    <br>
+                    <br> <span class="text-points">Бюджетування:</span><br>Встановлення бюджетів для різних категорій витрат.
+                    <br>
+                    <br> <span class="text-points">Фінансове планування:</span><br>Інструменти для планування великих покупок та заощаджень.
+                    <br>
+                    <br> <span class="text-points">Аналітика та звіти:</span><br>Регулярні звіти та аналітика фінансових звичок.
+                    <br>
+                    <br> <span class="text-points">Персоналізовані рекомендації:</span><br>Використання штучного інтелекту, для надання персоналізованих рекомендацій по управлінню фінансами.
+                </p>
+            </div>
+            <div class="image-example-box">
+                <img class="image-example" src="./images/solution.png" alt="3">
+            </div>
+        </section>
+        <section class="call-to-action">
+
+            <h2 class="interested">Зацікавлені?</h2>
+            <button class="button-try" type="button" data-modal-open>
+                Спробуйте
+            </button>
+
+            </div>
+        </section>
+    </main>
+
+    <div class="backdrop is-hidden" data-modal> 
+        <div class="modal">
+            <button data-modal-close class="close-modal">
+                x
+            </button>
+
+            <h2 class="feedback-title">Дозвольте поставити вам кілька запитань</h2>
+
+            <form class="feedback-form">
+                <label for="name" class="input-label"> Їм'я </label>
+                <div class="form-field">
+                  <input type="text" name="name" id="name" required />
+                  <label for="name" class="form-icon">
+                  </label>
+                </div>
+      
+                <label for="email" class="input-label"> Електрона пошта </label>
+                <div class="form-field">
+                  <input type="email" name="email" id="email" />
+                  <label for="email" class="form-icon">
+                  </label>
+                </div>
+      
+                <label for="" class="comment-label">
+                    Які функції ви шукаєте в додатку для контролю бюджету?
+                  <textarea class="textarea" name="comment" placeholder="Текст"></textarea>
+                </label>
+                <label for="" class="comment-label">
+                    Як ви зараз керуєте своїм бюджетом?
+                    <textarea class="textarea" name="comment" placeholder="Текст"></textarea>
+                </label>
+                <label for="" class="comment-label">
+                    Що для вас є найбільшим викликом у плануванні бюджету?
+                    <textarea class="textarea" name="comment" placeholder="Текст"></textarea>
+                </label>
+      
+                <button type="submit" class="submit-btn">Submit</button>
+              </form>
+        </div>
+    </div>
+  
+
+    <script src="./index.js"></script>
+</body>
+</html>
