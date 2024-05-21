@@ -23,17 +23,27 @@
 
   <body>
     <header>
-        <h1 class="main-title">Розумний додаток для управління особистим бюджетом</h1>
+        <b>Budget Buddy</b>
+        
+        <a href="#try-it-out">Спробувати</a>
+        <a href="#benefits">Переваги</a>
+        <a href="">Підписка</a>
+        <a href="#idea">Про застосунок</a>
     </header>
     <main>
-        <section class="info-slides">
-            <div class="text-example">
-                <h2 class="section-title">Ідея</h2>
-                <p>Наш стартап пропонує створення інноваційного розумного додатку для управління особистим бюджетом, який допоможе користувачам легко та ефективно контролювати свої фінанси, планувати витрати та заощадження, а також досягати своїх фінансових цілей. <br>Додаток поєднує зручність, автоматизацію та штучний інтелект для забезпечення максимального комфорту та користі для кожного користувача.</p>
+        
+        <section class="hero-section" id="idea">
+            <h1 class="main-title">Керуйте своїм бюджетом легко та ефективно з <b class="app-name">Budget Buddy</b></h1>
+            <div class="info-slides">
+                <div class="text-example">
+                    <h2 class="section-title">Ідея</h2>
+                    <p>Наш стартап пропонує створення інноваційного розумного додатку для управління особистим бюджетом, який допоможе користувачам легко та ефективно контролювати свої фінанси, планувати витрати та заощадження, а також досягати своїх фінансових цілей. <br>Додаток поєднує зручність, автоматизацію та штучний інтелект для забезпечення максимального комфорту та користі для кожного користувача.</p>
+                </div>
+                <div class="image-example-box"> 
+                    <img class="image-example" src="./images/idea.png" alt="1">
+                </div>
             </div>
-            <div class="image-example-box"> 
-                <img class="image-example" src="./images/idea.png" alt="1">
-            </div>
+
         </section>
         <section class="info-slides">
             <div class="image-example-box-2">
@@ -69,11 +79,30 @@
                 <img class="image-example" src="./images/solution.png" alt="3">
             </div>
         </section>
-        <section class="call-to-action">
+        
+        <section class="info-slides" id="benefits">
+            <div class="image-example-box-2">
+                <img class="image-example" src="./images/benefits.png" alt="4">
+            </div>
 
-            <h2 class="interested">Зацікавлені?</h2>
+            <div class="text-example-2">
+                <h2 class="section-title">Переваги</h2>
+                <p>
+                    <br><span class="text-points">1. Ефективна автоматизація:</span> <br>Додаток автоматично категоризує та відстежує витрати, використовуючи розумні алгоритми. Заощаджуйте час та насолоджуйтесь високою точністю управління фінансами.
+                    <br>
+                    <br><span class="text-points">2. Мінімізація фінансового стресу:</span> <br>Додаток надає повний огляд фінансового стану в реальному часі. Будьте завжди в курсі своїх витрат, доходів та заощаджень.
+                    <br>
+                    <br><span class="text-points">3. Досягнення фінансових цілей:</span> <br>Додаток допомагає встановити конкретні фінансові цілі, та відстежує прогрес їх досягнення. Рекомендації оптимальних стратегій збереження та інвестування, для досягнення цілей швидше та ефективніше.
+                    <br>
+                    <br><span class="text-points">4. Зручний UI:</span><br> Додаток має інтуїтивний інтерфейс, легкий у використанні для будь-якого користувача, незалежно від рівня фінансової грамотності. Гарантує високий рівень безпеки фінансової інформації.
+                </p>
+            </div>
+        </section>
+        <section class="call-to-action" id="try-it-out">
+
+            <!-- <h2 class="interested">Зареєструйтесь зараз</h2> -->
             <button class="button-try" type="button" data-modal-open>
-                Спробуйте
+                Спробувати зараз
             </button>
 
             </div>
@@ -121,7 +150,29 @@
         </div>
     </div>
   
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Smart Budget App. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
 
     <script src="./index.js"></script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+    
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    
 </body>
 </html>
